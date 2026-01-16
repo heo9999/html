@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/*
+ * jQuery File Upload Plugin CSS
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * https://opensource.org/licenses/MIT
+ */
+
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  height: 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  font-size: 200px !important;
+  direction: ltr;
+  cursor: pointer;
+}
+
+/* Fixes for IE < 8 */
+@media screen\9 {
+  .fileinput-button input {
+    font-size: 150% !important;
+  }
+}
+
+ul.filebox { padding:0 5px;border:1px #3399ff solid;overflow-y:auto; }
+ul.filebox li { padding:1px 0;line-height:22px;border-bottom:1px #cccccc dashed; }
+
+.progress { float:right;margin-right:20px;width:300px; }
+.progress .bar { margin-top:3px;height:16px;background: url(/image/progressbar.gif) left -3px !important; }
+
+.filename { display:inline-block;width:50%;font-size:14px; }
+.filesize { display:inline-block;margin:0 10px;width:70px;font-size:14px;text-align:right; }
+.pdfpage { display:inline-block;width:60px;font-size:14px; }
+
+.imageFile .filename { width:200px; }
+.imageFile .progress { float:right;margin-right:20px;width:300px; }
+
+.filebox-placeholder { background:url(/image/filebox_placeholder.png) center center no-repeat; }
+.filebox-placeholder.disabled { background:url(/image/filebox_placeholder_gray.png) center center no-repeat; }

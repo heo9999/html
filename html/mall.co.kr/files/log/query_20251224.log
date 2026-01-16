@@ -1,0 +1,6 @@
+[2025-12-24 08:27:12] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where coalesce(use_yn, 'Y')' at line 1
+SELECT * FROM user_inf WHERE where coalesce(use_yn, 'Y') 
+[2025-12-24 09:46:40] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' orders_stat_cd = 'O0001', mod_dttm = now(), mod_id = "11100907" WHERE orders...' at line 1
+UPDATE orders_inf SET , orders_stat_cd = 'O0001', mod_dttm = now(), mod_id = "11100907" WHERE orders_id ='64'
+[2025-12-24 16:15:12] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'reg_id, mod_id) VALUES ("1234555", "jhgjhgjhgjhgjhhhhhhhhhhhhhhhhhhhhhhhhhhhh...' at line 1
+INSERT INTO board_inf (title, board_ctnt  reg_id, mod_id) VALUES ("1234555", "jhgjhgjhgjhgjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh", "94738827", "94738827")
